@@ -1,0 +1,5 @@
+gcc -shared -fPIC calculator.c -o calculator.dll
+
+gcc main.c -L. -lcalculator -o main.exe 
+
+./main.exe
