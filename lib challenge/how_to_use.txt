@@ -1,0 +1,7 @@
+gcc -c .\calculator.c -o .\calculator.o 
+
+ar cr libcalculator.a .\calculator.o  
+
+gcc main.c -L. -lcalculator -o main.exe 
+
+./main.exe
